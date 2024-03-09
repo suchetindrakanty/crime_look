@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+
+.footer-main{
+    background-color: rgba(38,38,38,255);
+    padding: 30px;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-content{
+    width: 30%;
+}
+
+.footer-content ul span{
+    font-weight: bold;
+    font-size: 25px;
+    font-family: 'Teko', sans-serif;
+    color: #fff;
+    letter-spacing: 2px;
+}
+.footer-content ul{
+    list-style: none;
+    left: 0;
+}
+
+.footer-content ul li{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    color: #999;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.footer-content ul li .link:hover{
+    color: #fbe122;
+    width: fit-content;
+}
+
+.socialmedia-icon{
+    display: flex;
+}
+
+.privacy{
+    margin-top: 50px;
+}
+
+.socialmedia-icon{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content ul li .link{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    color: #999;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.copyright-container{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.copyright-container div{
+    color: #fff;
+    font-size: 13px;
+    margin: 10px;
+}
+
+.copyright-container div .link{
+    color: #fff;
+    margin-left: 5px;
+}
+
+.copyright-container div .link:hover{
+    color: #fbe122;
+}
+
+.socialmedia-icon li .link{
+    color: white;
+}
+
+.socialmedia-icon li .link:hover{
+    color: #fbe122;
+}
+
+@media (max-width: 660px){
+    .footer-content{
+        width: 50%;
+        margin-bottom: 50px;
+    }
+
+    .socialmedia-icon{
+        width: 60%;
+    }
+
+    .footer-content ul span{
+        font-size: 18px;
+    }
+
+    .copyright-container div .link{
+        font-size: 14px;
+    }
+
+    .copyright-container{
+        width: 100%;
+    }
+
+    .copyright-container div{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+@media (min-width:1200px) and (max-width:2000px){
+    .socialmedia-icon{
+        width: 50%;
+    }   
+}

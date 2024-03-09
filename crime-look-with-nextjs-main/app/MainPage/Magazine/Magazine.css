@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+.magazine-container{
+    margin-top: 150px;
+}
+.magzine-heading div{
+    height: 100%;
+    width: 100%;
+    transform: skew(-40deg);
+    background-color: #161509;
+    position: absolute;
+    top: 0;
+    left: 17%;
+    z-index: -1;
+  }
+
+  .magzine-heading{
+    background-color: #161509;
+    height: 80px;
+    width: 80%;
+    position: relative;
+    z-index: -2;
+  }
+
+  .magzine-heading h1{
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+  }
+
+  .magazine-cover{
+    /* background-color: #161509; */
+    padding: 50px 0;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .magazine-cover .img{
+    width: 300px;
+    box-shadow: 0.5px 0.5px 20px 5px #201f1f;
+    transition: 0.3s all ease-in-out;
+    cursor: pointer;
+  }
+
+  .magazine-cover .img:hover{
+    transform: scale(1.1);
+  }
+
+  .magazine-cover p{
+    color: #161509;
+    margin-top: 20px;
+    border-bottom: 1px solid #161509;
+    text-shadow: 2px 4px 5px #b53030;
+    transition: 0.2s all ease-in-out;
+  }
+
+  .view-all-magazine{
+    animation: scaling 3s infinite forwards;
+    transition: 3s all ease-in-out;
+  }
+
+  @keyframes scaling {
+    0%{
+      transform: scale(1.2);
+    }
+  }
+
+  .magazine-cover p:hover{
+    text-shadow: 0px 0px 0px #b53030;
+    color: #ab980a;
+    border-bottom: 1px solid #ab980a;
+  }
+
+  .magazine-cover .img{
+    width: 250px;
+  }
+
+  @media (max-width: 480px){
+    .magzine-heading{
+      width: 70%;
+    }
+  }
